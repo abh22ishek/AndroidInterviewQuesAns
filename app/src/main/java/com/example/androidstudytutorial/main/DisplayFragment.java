@@ -48,6 +48,7 @@ public class DisplayFragment extends Fragment {
         textViewAnswers = view.findViewById(R.id.txtAnswers);
         textViewQuestions =view.findViewById(R.id.txtQuestions);
 
+        assert getArguments() != null;
         mQuestions  = getArguments().getString("QUESTIONS");
         mAnswers  = getArguments().getString("ANSWERS");
 

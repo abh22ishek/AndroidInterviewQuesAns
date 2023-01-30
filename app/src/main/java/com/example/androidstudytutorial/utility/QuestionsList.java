@@ -48,11 +48,11 @@ public class QuestionsList {
 
  public static String PatternS = "What are the differences between MVC, MVP, and MVVM architecture in Android?";
 
- public static String Singelton  = "What is Singleton pattern in android . Explain it with an example";
+ public static String Singelton  = "What is Singelton pattern in android ? How can we create a thread safe Singelton ?";
 
  public static String Room = "What is a ROOM database in Android . What is the use and benefits over the traditional SQLite database.";
 
- public static String Timer  = " what is Timer Task and Alarm Manager in Android ?";
+ public static String Timer  = "What is Timer Task and Alarm Manager in Android ?";
 
  public static String SystemApps = "What is the difference between Systems apps and User apps ";
 

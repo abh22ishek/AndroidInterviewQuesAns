@@ -146,18 +146,17 @@ public class AnswerList2 {
 
 
     public static String ViewModel = "ViewModel is a class that is part of the Android Architecture Components, which is a set of libraries provided by Google to help developers design and build robust, maintainable, and testable apps.\n" +
-            "The ViewModel class is used to store and manage UI-related data in a lifecycle-aware manner. It is designed to survive configuration changes such as screen rotations, so that data does not need to be reloaded or \n" +
-            "re-requested every time the screen rotates.\n" +
+            "The ViewModel class is used to store and manage UI-related data in a lifecycle-aware manner. It is designed to survive configuration changes such as screen rotations, so that data does not need to be reloaded or " + "re-requested every time the screen rotates.\n" +
             "The main use of ViewModel is to separate data from the UI and to provide a consistent and clean way of managing data. This can help to improve the performance of your app, reduce the likelihood of bugs, and make it \n" +
             "easier to test your app.\n" +
-            "" +
+            "\n" +
             "Benefits of using ViewModel are:\n" +
             "\n" +
-            "It helps to separate the data from the UI, making it easier to test and maintain the code.\n" +
-            "It provides a consistent and clean way of managing data, which can improve the performance of your app.\n" +
-            "It helps to survive configuration changes such as screen rotations, without losing the data.\n" +
-            "It is lifecycle-aware and automatically manages the data, so you don't need to worry about cleaning up resources when they are no longer needed.\n" +
-            "It enables more modular and reusable code, by breaking down the app into smaller, more manageable components.\n" +
+            "1. It helps to separate the data from the UI, making it easier to test and maintain the code.\n" +
+            "2. It provides a consistent and clean way of managing data, which can improve the performance of your app.\n" +
+            "3. It helps to survive configuration changes such as screen rotations, without losing the data.\n" +
+            "4. It is lifecycle-aware and automatically manages the data, so you don't need to worry about cleaning up resources when they are no longer needed.\n" +
+            "5. It enables more modular and reusable code, by breaking down the app into smaller, more manageable components.\n\n" +
             "It's important to note that ViewModel is not a replacement for the traditional Android storage mechanisms such as SharedPreferences or SQLite. It's main purpose is to store and manage UI-related data, and it's not meant to replace data storage mechanisms.\n";
 
 

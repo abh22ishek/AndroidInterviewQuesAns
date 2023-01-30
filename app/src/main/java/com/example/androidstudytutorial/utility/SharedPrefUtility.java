@@ -291,9 +291,9 @@ public class SharedPrefUtility {
             myEdit.putString("25", AnswerList2.JetPackComponent);
             myEdit.putString("26", AnswerList2.Patterns);
 
-//            myEdit.putString("27", QuestionsList.Singelton);
-//            myEdit.putString("28", QuestionsList.Room);
-//            myEdit.putString("29", QuestionsList.Timer);
+            myEdit.putString("27", AnswerList3.Singelton);
+            myEdit.putString("28", AnswerList3.Room);
+            myEdit.putString("29", AnswerList3.Alarm);
 //            myEdit.putString("30", QuestionsList.SystemApps);
 //            myEdit.putString("31", QuestionsList.BroadCast);
 //            myEdit.putString("32", QuestionsList.AsyncLimitations);
