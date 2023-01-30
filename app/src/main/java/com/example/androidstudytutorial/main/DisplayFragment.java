@@ -56,5 +56,6 @@ public class DisplayFragment extends Fragment {
 
 
         textViewAnswers.setMovementMethod(new ScrollingMovementMethod());
+        //
     }
 }
