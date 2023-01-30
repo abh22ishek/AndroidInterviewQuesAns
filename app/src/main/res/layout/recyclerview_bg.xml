@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    card_view:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    card_view:cardBackgroundColor="@color/bar_layout"
+    android:layout_height="80dp">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/textCount"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="1."
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@+id/textCount"
+            android:text="Questions 1111"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

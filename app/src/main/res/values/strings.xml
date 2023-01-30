@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">AndroidStudyTutorial</string>
+    <string name="app_interview">Android Interview Questions</string>
+
+    <string name="application_class">1. An Application class in Android is a base class for those who need to maintain global application state.\n
+2. It is instantiated before any other class when the process for your application/package is created.\n
+3. The Application class is usually subclassed to provide a custom implementation and to maintain global application state.\n
+4. To create an Application class in Android, you can create a new class that extends the Application class and override the onCreate() method.\n\n
+5. In the onCreate() method, you can initialize any global state or resources that are needed throughout the lifetime of the application.\n
+6. The use of Application class is to provide a way to maintain global state, resources, or settings throughout the lifetime of an application.\n
+7. It is also used for initializing certain libraries, such as third-party libraries, that are needed by the entire application.\n
+8. Additionally, it can be used to provide a global context that can be accessed from any part of the application.\n</string>
+
+
+    <string name="ui_thread">1. The UI thread, also known as the main thread, is the thread that is responsible for handling all UI-related tasks in an Android app, such as drawing and event handling. It is the thread where all activities, views, and other UI components run.\n\n
+        2. It is not recommended to update the UI thread from any background thread directly. The reason for this is that updating the UI thread from a background thread can cause the UI to become unresponsive or produce a "stutter" effect, due to the fact that the background thread may be running at a different pace than the UI thread.\n\n
+        - Instead, Android provides several mechanisms for updating the UI from a background thread, such as the use of Handlers, AsyncTask, and LiveData. These mechanisms allow for the background thread to communicate with the UI thread in a way that ensures smooth and responsive UI updates.</string>
+
+<string name="loopers">A Looper is a message-passing mechanism in Android that allows background threads to send messages to the UI thread. It is used to handle and process messages and runnables that are posted to a threads message queue.
+    This allows background threads to communicate with the UI thread and update the user interface as needed. An example of where a Looper is used is in the creation of a Handler, which allows for the scheduling of code to be run on a specific thread, often the UI thread. A Looper is typically used in conjunction with a Handler to allow for communication between different threads in an Android application.</string>
+
+
+</resources>
