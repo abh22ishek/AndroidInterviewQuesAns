@@ -33,13 +33,13 @@ public class AnswerList3 {
             "The benefits of using Room over traditional SQLite databases in Android include:\n" +
             "\n" +
             "** Easy database migration: Room provides a simple API for updating the schema of your database, which makes it easier to handle changes to your database over time.\n" +
-            "\n" +
+            "\n\n" +
             "** Compile-time verification: Room uses annotations and compile-time checks to validate the structure of your database, which helps catch errors early in development.\n" +
-            "\n" +
+            "\n\n" +
             "** Simplified query syntax: Room provides a more concise and readable query syntax, compared to raw SQLite, making it easier to write and maintain complex database queries.\n" +
-            "\n" +
+            "\n\n" +
             "** Better type safety: Room supports Java data types and performs automatic type conversions, making it easier to work with data in your app.\n" +
-            "\n" +
+            "\n\n" +
             "** LiveData integration: Room integrates with LiveData, a component of the Android Architecture Components, to provide automatic updates of the data in your database when it changes.\n" +
             "\n\n" +
             "In summary, Room provides a more modern and user-friendly way to interact with databases in Android, with the benefits of increased type safety, improved query syntax, and easier database migrations.";
@@ -58,10 +58,10 @@ public class AnswerList3 {
 
 public static String SystemApps = "System apps and user apps in Android differ in terms of:\n" +
         "\n" +
-        "1. Installation: System apps come pre-installed on the device and cannot be uninstalled by the user, while user apps can be installed from the Google Play Store or other app stores.\n" +
-        "2. Permissions: System apps typically have more access to system resources and require more permissions than user apps.\n" +
-        "3. Updates: System apps are updated through firmware updates, while user apps can be updated through the Google Play Store or other app stores.\n" +
-        "4. Control: System apps are controlled by the device manufacturer, while user apps are controlled by the end-user.";
+        "\n 1. Installation: System apps come pre-installed on the device and cannot be uninstalled by the user, while user apps can be installed from the Google Play Store or other app stores.\n" +
+        "\n 2. Permissions: System apps typically have more access to system resources and require more permissions than user apps.\n" +
+        "\n 3. Updates: System apps are updated through firmware updates, while user apps can be updated through the Google Play Store or other app stores.\n" +
+        "\n 4. Control: System apps are controlled by the device manufacturer, while user apps are controlled by the end-user.";
 
 
 
@@ -90,11 +90,11 @@ public static String Retrofit = "Retrofit is a popular REST client for Android a
         "\n" +
         "Advantages of Retrofit over other networking libraries include:\n" +
         "\n" +
-        "* Type-safe:\n" +
+        "* Type-safe:\n\n" +
         "* Simple and clean API\n" +
-        "* Automatic parsing: Retrofit automatically converts API responses into Java objects, saving time and reducing code complexity.\n" +
-        "* Good performance: Retrofit is designed to be fast and efficient, with a focus on good performance and low overhead.\n" +
-        "* Customization: Retrofit provides a number of customization options, including support for custom request and response converters, making it easy to extend and adapt to specific needs.\n" +
+        "* Automatic parsing: Retrofit automatically converts API responses into Java objects, saving time and reducing code complexity.\n\n" +
+        "* Good performance: Retrofit is designed to be fast and efficient, with a focus on good performance and low overhead.\n\n" +
+        "* Customization: Retrofit provides a number of customization options, including support for custom request and response converters, making it easy to extend and adapt to specific needs.\n\n" +
         "* Good documentation and community support: Retrofit has extensive documentation and a large community of users, making it easy to find help and examples online.";
 
 
@@ -104,17 +104,17 @@ public static String Glide = "Glide is an open-source image loading library for 
         "\n" +
         "Advantages of Glide over other image libraries include:\n" +
         "\n" +
-        "Efficient memory management: Glide uses efficient memory management techniques to ensure that images are loaded quickly and smoothly, without causing excessive memory usage or OutOfMemory errors.\n" +
-        "\n" +
-        "Fast and smooth image loading: Glide uses a number of performance optimizations to ensure that images load quickly and smoothly, even on low-end devices.\n" +
-        "\n" +
-        "Support for different image types: Glide supports a wide range of image types, including JPEG, PNG, GIF, and WebP.\n" +
-        "\n" +
-        "Automatic image caching: Glide automatically caches images to disk and memory, making it easy to reuse images without re-downloading them.\n" +
-        "\n" +
-        "Customization options: Glide provides a number of customization options, including support for custom transformations and placeholders, making it easy to adapt to specific needs.\n" +
-        "\n" +
-        "Good documentation and community support: Glide has extensive documentation and a large community of users, making it easy to find help and examples online.";
+        "1. Efficient memory management: Glide uses efficient memory management techniques to ensure that images are loaded quickly and smoothly, without causing excessive memory usage or OutOfMemory errors.\n" +
+        "\n\n" +
+        "2. Fast and smooth image loading: Glide uses a number of performance optimizations to ensure that images load quickly and smoothly, even on low-end devices.\n" +
+        "\n\n" +
+        "3. Support for different image types: Glide supports a wide range of image types, including JPEG, PNG, GIF, and WebP.\n" +
+        "\n\n" +
+        "4. Automatic image caching: Glide automatically caches images to disk and memory, making it easy to reuse images without re-downloading them.\n" +
+        "\n\n" +
+        "5. Customization options: Glide provides a number of customization options, including support for custom transformations and placeholders, making it easy to adapt to specific needs.\n" +
+        "\n\n" +
+        "6. Good documentation and community support: Glide has extensive documentation and a large community of users, making it easy to find help and examples online.";
 
 
 
@@ -125,10 +125,10 @@ public static String RecyclerViewPerfomance = "RecyclerView is a flexible and ef
         "\n" +
         "Advantages of RecyclerView over ListView:\n" +
         "\n" +
-        "1. Viewholder pattern: RecyclerView uses a viewholder pattern, which helps to recycle the views and improve performance.\n" +
-        "2. Item animations: RecyclerView supports item animations, which allows developers to add custom animations to the items in the list.\n" +
-        "3. Layout manager: RecyclerView uses a layout manager to manage the position of items in the list, which makes it easier to implement complex layouts.\n" +
-        "4. Flexibility: RecyclerView is more flexible than ListView, as it supports different types of layouts, such as linear, grid, and staggered grid.\n" +
+        "1. Viewholder pattern: RecyclerView uses a viewholder pattern, which helps to recycle the views and improve performance.\n\n" +
+        "2. Item animations: RecyclerView supports item animations, which allows developers to add custom animations to the items in the list.\n\n" +
+        "3. Layout manager: RecyclerView uses a layout manager to manage the position of items in the list, which makes it easier to implement complex layouts.\n\n" +
+        "4. Flexibility: RecyclerView is more flexible than ListView, as it supports different types of layouts, such as linear, grid, and staggered grid.\n\n" +
         "5. Scroll performance: RecyclerView has better scroll performance compared to ListView, as it uses the Viewholder pattern to recycle the views and improve performance.";
 
 
