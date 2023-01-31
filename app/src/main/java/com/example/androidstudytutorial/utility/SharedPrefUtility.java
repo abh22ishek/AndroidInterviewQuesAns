@@ -294,17 +294,18 @@ public class SharedPrefUtility {
             myEdit.putString("27", AnswerList3.Singelton);
             myEdit.putString("28", AnswerList3.Room);
             myEdit.putString("29", AnswerList3.Alarm);
-//            myEdit.putString("30", QuestionsList.SystemApps);
-//            myEdit.putString("31", QuestionsList.BroadCast);
-//            myEdit.putString("32", QuestionsList.AsyncLimitations);
-//            myEdit.putString("33", QuestionsList.WorkManager);
-//
-//            myEdit.putString("34", QuestionsList.IntentFilter);
-//            myEdit.putString("35", QuestionsList.Retrofit);
-//            myEdit.putString("36", QuestionsList.Glide);
-//            myEdit.putString("37", QuestionsList.RecyclerListView);
-//            myEdit.putString("38", QuestionsList.ContentProvider);
-//            myEdit.putString("39", QuestionsList.ExecThread);
+            myEdit.putString("30", AnswerList3.SystemApps);
+           myEdit.putString("31", AnswerList3.broadcast);
+           myEdit.putString("32", AnswerList3.asyncLimitations);
+           myEdit.putString("33", AnswerList2.work_manager);
+
+           myEdit.putString("34", AnswerList3.Intent_Filter);
+          myEdit.putString("35", AnswerList3.Retrofit);
+           myEdit.putString("36", AnswerList3.Glide);
+           myEdit.putString("37", AnswerList3.RecyclerViewPerfomance);
+           myEdit.putString("38", AnswerList3.ContentProvider);
+          myEdit.putString("39", AnswerList3.ExecThread);
+
 //            myEdit.putString("40", QuestionsList.RxJava);
 //            myEdit.putString("41", QuestionsList.RxJava_Map);
 //            myEdit.putString("42", QuestionsList.RxJava_Observable);

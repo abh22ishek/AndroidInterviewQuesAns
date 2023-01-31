@@ -56,8 +56,94 @@ public class AnswerList3 {
 
 
 
+public static String SystemApps = "System apps and user apps in Android differ in terms of:\n" +
+        "\n" +
+        "1. Installation: System apps come pre-installed on the device and cannot be uninstalled by the user, while user apps can be installed from the Google Play Store or other app stores.\n" +
+        "2. Permissions: System apps typically have more access to system resources and require more permissions than user apps.\n" +
+        "3. Updates: System apps are updated through firmware updates, while user apps can be updated through the Google Play Store or other app stores.\n" +
+        "4. Control: System apps are controlled by the device manufacturer, while user apps are controlled by the end-user.";
 
 
 
+public static String broadcast = "A Broadcast Receiver in Android is a component that listens for and reacts to system-wide broadcast announcements, such as incoming SMS messages, device boot completion, and connectivity changes.";
+
+
+public static String asyncLimitations = "limitations of using AsyncTask in Android and how to overcome them:\n" +
+        "\n" +
+        "Limitations:\n" +
+        "\n" +
+        "-Only one task can run at a time.\n" +
+        "-No control over the background thread.\n" +
+        "-Not suitable for long-running tasks.\n\n" +
+        "-Solutions:\n" +
+        "\n" +
+        "-Use Threads and Handlers.\n" +
+        "-Use the Executor framework.\n" +
+        "-Use IntentService.\n" +
+        "-Use the JobScheduler API.\n" +
+        "-Use third-party libraries like RxJava and Coroutines.";
+
+
+public static String Intent_Filter = "An Intent Filter in Android is a declaration used to specify the type of intents that an activity, service, or broadcast receiver can handle. It tells the Android system what actions and data types the component can respond to. The declaration is made in the AndroidManifest.xml file using the <intent-filter> tag. Intent filters are used to launch activities, start services, and receive broadcasts in response to specific actions and data types.";
+
+public static String Retrofit = "Retrofit is a popular REST client for Android and Java. It is a type-safe HTTP client that makes it easy to consume REST APIs. It uses annotations to declare the API endpoint and request method, and automatically converts the API response into Java objects.\n" +
+        "\n" +
+        "Advantages of Retrofit over other networking libraries include:\n" +
+        "\n" +
+        "* Type-safe:\n" +
+        "* Simple and clean API\n" +
+        "* Automatic parsing: Retrofit automatically converts API responses into Java objects, saving time and reducing code complexity.\n" +
+        "* Good performance: Retrofit is designed to be fast and efficient, with a focus on good performance and low overhead.\n" +
+        "* Customization: Retrofit provides a number of customization options, including support for custom request and response converters, making it easy to extend and adapt to specific needs.\n" +
+        "* Good documentation and community support: Retrofit has extensive documentation and a large community of users, making it easy to find help and examples online.";
+
+
+
+
+public static String Glide = "Glide is an open-source image loading library for Android. It is designed to load images efficiently and smoothly, making it a popular choice for displaying images in mobile apps. Glide supports fetching, decoding, and displaying images from multiple sources, including local storage, network URLs, and content providers.\n" +
+        "\n" +
+        "Advantages of Glide over other image libraries include:\n" +
+        "\n" +
+        "Efficient memory management: Glide uses efficient memory management techniques to ensure that images are loaded quickly and smoothly, without causing excessive memory usage or OutOfMemory errors.\n" +
+        "\n" +
+        "Fast and smooth image loading: Glide uses a number of performance optimizations to ensure that images load quickly and smoothly, even on low-end devices.\n" +
+        "\n" +
+        "Support for different image types: Glide supports a wide range of image types, including JPEG, PNG, GIF, and WebP.\n" +
+        "\n" +
+        "Automatic image caching: Glide automatically caches images to disk and memory, making it easy to reuse images without re-downloading them.\n" +
+        "\n" +
+        "Customization options: Glide provides a number of customization options, including support for custom transformations and placeholders, making it easy to adapt to specific needs.\n" +
+        "\n" +
+        "Good documentation and community support: Glide has extensive documentation and a large community of users, making it easy to find help and examples online.";
+
+
+
+
+
+
+public static String RecyclerViewPerfomance = "RecyclerView is a flexible and efficient version of ListView in Android. It works by reusing the view components that are no longer visible to the user and recycling them to display new content. This saves memory and improves performance compared to ListView, which creates new views for each item in the list.\n" +
+        "\n" +
+        "Advantages of RecyclerView over ListView:\n" +
+        "\n" +
+        "1. Viewholder pattern: RecyclerView uses a viewholder pattern, which helps to recycle the views and improve performance.\n" +
+        "2. Item animations: RecyclerView supports item animations, which allows developers to add custom animations to the items in the list.\n" +
+        "3. Layout manager: RecyclerView uses a layout manager to manage the position of items in the list, which makes it easier to implement complex layouts.\n" +
+        "4. Flexibility: RecyclerView is more flexible than ListView, as it supports different types of layouts, such as linear, grid, and staggered grid.\n" +
+        "5. Scroll performance: RecyclerView has better scroll performance compared to ListView, as it uses the Viewholder pattern to recycle the views and improve performance.";
+
+
+public static String ContentProvider = "A Content Provider is a component in Android that manages a shared set of app data. It provides access to data from different applications and acts as an intermediary between the data and the applications that use it." +
+        "\n\n The use of a Content Provider is to securely share data between different applications. It abstracts the data storage layer and provides a uniform interface to access the data, making it easy to manage and exchange data between apps.";
+
+
+public static String ExecThread = "An Executor in Android is a class that allows you to run code on a background thread. It provides a convenient way to execute long-running or resource-intensive tasks asynchronously, " +
+        "without impacting the responsiveness of the main UI thread." +
+        "\n\nExecutor executor = Executors.newSingleThreadExecutor();\n" +
+        "executor.execute(new Runnable() {\n" +
+        "  @Override\n" +
+        "  public void run() {\n" +
+        "    // code to download the image\n" +
+        "  }\n" +
+        "});\n";
 
 }

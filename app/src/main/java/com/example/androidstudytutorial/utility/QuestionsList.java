@@ -54,11 +54,11 @@ public class QuestionsList {
 
  public static String Timer  = "What is Timer Task and Alarm Manager in Android ?";
 
- public static String SystemApps = "What is the difference between Systems apps and User apps ";
+ public static String SystemApps = "What is the difference between Systems apps and User apps?";
 
- public static String BroadCast = " What is Broadcast Receiver in Android ? What are the ways we can implement broadcast receiver";
+ public static String BroadCast = "What is Broadcast Receiver in Android ? What are the ways we can implement broadcast receiver";
 
- public static String AsyncLimitations = "what is the disadvantage of using Async Task ? How can we overcome it ?";
+ public static String AsyncLimitations = "What is the disadvantage of using Async Task ? How can we overcome it ?";
 
  public static String WorkManager = "What is Work Manager in Android? What are its types? Can you explain it?";
 
@@ -73,7 +73,7 @@ public class QuestionsList {
 
  public static String ContentProvider = "What is a content provider in android ? What is the use of it.?";
 
- public static String ExecThread = "what is an Executor Thread in Android ? what is the use for it ? Give an Example ?";
+ public static String ExecThread = "What is an Executor Thread in Android ? what is the use for it ? Give an Example ?";
 
  public static String RxJava = "What is RxJava in Android ? what are its features . Explain in detail?";
 
