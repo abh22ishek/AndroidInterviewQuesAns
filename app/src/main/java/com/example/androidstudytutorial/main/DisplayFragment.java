@@ -48,15 +48,27 @@ public class DisplayFragment extends Fragment {
         textViewAnswers = view.findViewById(R.id.txtAnswers);
         textViewQuestions =view.findViewById(R.id.txtQuestions);
 
+
+
+
         assert getArguments() != null;
         mQuestions  = getArguments().getString("QUESTIONS");
+      //  textViewAnswers.setTypeface(Typeface.createFromAsset(getActivity().getAssets(), "fonts/CentraleSans-Book.otf"));
         mAnswers  = getArguments().getString("ANSWERS");
+       // textViewAnswers.setTypeface(Typeface.createFromAsset(getActivity().getAssets(), "fonts/avangami.ttf"));
 
         textViewQuestions.setText(mQuestions);
         textViewAnswers.setText(mAnswers);
 
 
         textViewAnswers.setMovementMethod(new ScrollingMovementMethod());
+
+        textViewAnswers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
         //
     }
 }

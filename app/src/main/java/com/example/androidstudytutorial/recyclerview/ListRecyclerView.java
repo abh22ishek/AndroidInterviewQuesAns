@@ -15,6 +15,7 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.androidstudytutorial.R;
+import com.example.androidstudytutorial.fonts.CustomFontTextView;
 import com.example.androidstudytutorial.listners.CallFragment;
 import com.example.androidstudytutorial.main.DisplayFragment;
 import com.example.androidstudytutorial.model.Descx;
@@ -65,8 +66,8 @@ public class ListRecyclerView extends RecyclerView.Adapter<ListRecyclerView.List
 
     public static class ListHolder extends RecyclerView.ViewHolder {
 
-        private TextView textView;
-        private TextView textCount;
+        private CustomFontTextView textView;
+        private CustomFontTextView textCount;
 
         private RelativeLayout relative;
 

@@ -62,8 +62,9 @@ public class MainFragment extends Fragment {
         recyclerView.setAdapter(listRecyclerView);
     }
 
+    List<Descx> descxList;
     private List<Descx> calculateQuestions(Context context){
-        List<Descx> descxList =new ArrayList<>();
+        descxList =new ArrayList<>();
         List<String> qList = SharedPrefUtility.readPreferencesQuestions(context);
         List<String> ansList = SharedPrefUtility.readPreferencesAnswers(context);
         Descx d;

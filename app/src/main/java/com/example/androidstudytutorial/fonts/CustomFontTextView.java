@@ -1,13 +1,18 @@
 package com.example.androidstudytutorial.fonts;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
+import android.util.Log;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatTextView;
 
 import com.example.androidstudytutorial.R;
+
 
 public class CustomFontTextView extends androidx.appcompat.widget.AppCompatTextView {
 
@@ -25,9 +30,12 @@ public class CustomFontTextView extends androidx.appcompat.widget.AppCompatTextV
     String TYPEFACE_CENTRALSANS_BOOK = "fonts/CentraleSans-Book.otf";
     String TYPEFACE_AVANT_GARDE="fonts/ufonts.com_avantgarde.ttf";
     String TYPEFACE_AVANT_GAMI= "fonts/avangami.ttf";
+
+    String TAG=CustomFontTextView.class.getSimpleName();
+
     public CustomFontTextView(Context context) {
         super(context);
-        init(context, null);
+
     }
 
     public CustomFontTextView(Context context, @Nullable AttributeSet attrs) {
@@ -45,6 +53,8 @@ public class CustomFontTextView extends androidx.appcompat.widget.AppCompatTextV
 
         //The value 0 is a default, but shouldn't ever be used since the attr is an enum
         int typeface = values.getInt(R.styleable.CustomFontTextView_fontname, 1);
+        //The value 0 is a default, but shouldn't ever be used since the attr is an enum
+        Log.i(TAG,"styleable typeface value="+typeface);
         switch (typeface) {
 
             case CENTRALESANS_XBOLD:

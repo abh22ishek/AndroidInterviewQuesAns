@@ -83,7 +83,7 @@ public class QuestionsList {
 
  public static String DependencyInjection= "What is dependency injection in Android and what is its use?Can you explain in detail all of the annotations(@) provided by Dagger?";
 
- public static String Services = "what are services in android ? Explain the type of services with an example ?";
+ public static String Services = "What are services in android ? Explain the type of services with an example ?";
 
  public static String Services_IntentService = "What is the difference between service and Intent Service ?";
 

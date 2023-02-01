@@ -10,5 +10,7 @@
             <enum name="avangami" value="5" />
             <enum name="arial" value="6"/>
         </attr>
+
+
     </declare-styleable>
 </resources>
