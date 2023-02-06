@@ -64,8 +64,8 @@ public class AnswerList2 {
 
 
     public static String ApplicationClass ="1. An Application class in Android is a base class for maintaining " +
-            "global application state.\n" +
-            "2. It is instantiated before any other class when the process for an app is created.\n " +
+            "global application state.\n\n" +
+            "2. It is instantiated before any other class when the process for an app is created.\n\n" +
             "3. The Application class is primarily used to manage resources shared across all components of the app, such as " +
             "singletons and shared preferences.\n\n"+"For Eg.\n\n"+"public class MyApplication extends Application {\n" +
             "    @Override\n" +
@@ -104,18 +104,23 @@ public class AnswerList2 {
             "\n\n In summary, if you are going to perform background tasks in your android app, it is recommended to use a combination of AsyncTask, Loaders and third party libraries such as RxJava, and Kotlin coroutines to overcome their disadvantages.";
 
 
+    public static String recyclerView = "RecyclerView is a flexible and efficient version of the ListView widget in Android.\n " +
+            "It is an improvement over the ListView widget in terms of performance and flexibility.\n " +
+            "The RecyclerView widget provides support for large-scale data collections and the ability to efficiently display data that changes dynamically.\n " +
+            "It is the recommended way to display a large number of list items in Android.\n" +
+            "The RecyclerView widget works by reusing the views of items that are no longer visible on the screen, reducing the number of views that need to be created and improving performance.";
 
     public static String work_manager = "Work Manager is a library in Android that allows you to schedule and execute background tasks in a controlled and predictable way. It is designed to be used in cases where you need to perform a background task that is guaranteed to run, even if the app is closed or the device is rebooted.\n" +
             "    \n\n Work Manager offers two types of background tasks:\n" +
             "    \nOne-time tasks: These are tasks that are executed only once and are not repeated.\n" +
             "    \n\nPeriodic tasks: These are tasks that are executed on a regular schedule, such as every 15 minutes or every day.\n" +
-            "    \n\\n\n Work Manager also provides several features that make it easy to handle background tasks, such as:\n" +
+            "    \n\n\n Work Manager also provides several features that make it easy to handle background tasks, such as:\n" +
             "    \n Chaining multiple tasks together\n" +
             "\n - Handling dependencies between tasks\n" +
-            "\n -Handling constraints such as network availability and charging state\n" +
-            "\n -Handling retries and back offs\n" +
-            "\n -Handling cancellation of tasks\n" +
-            "\n -Work Manager is built on top of JobScheduler, and it is compatible with all Android versions starting from Android 5.0 (API level 21) and above.";
+            "\n - Handling constraints such as network availability and charging state\n" +
+            "\n - Handling retries and back offs\n" +
+            "\n - Handling cancellation of tasks\n" +
+            "\n - Work Manager is built on top of JobScheduler, and it is compatible with all Android versions starting from Android 5.0 (API level 21) and above.";
 
 
 

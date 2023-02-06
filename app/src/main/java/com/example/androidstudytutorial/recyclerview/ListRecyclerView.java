@@ -51,7 +51,7 @@ public class ListRecyclerView extends RecyclerView.Adapter<ListRecyclerView.List
           holder.textCount.setText(position+1+".");
       }
 
-      holder.relative.setOnClickListener(view -> callFragment.showFragment(mDescList.get(holder.getAdapterPosition()).getQuestions(),
+      holder.relative.setOnClickListener(view -> callFragment.showFragment(mDescList,holder.getAdapterPosition(),mDescList.get(holder.getAdapterPosition()).getQuestions(),
               mDescList.get(holder.getAdapterPosition()).getAnswers()));
 
 

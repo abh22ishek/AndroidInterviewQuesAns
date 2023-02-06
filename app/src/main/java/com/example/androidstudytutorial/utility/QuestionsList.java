@@ -75,7 +75,7 @@ public class QuestionsList {
 
  public static String ExecThread = "What is an Executor Thread in Android ? what is the use for it ? Give an Example ?";
 
- public static String RxJava = "What is RxJava in Android ? what are its features . Explain in detail?";
+ public static String RxJava = "What is RxJava in Android and what are its features? Please explain in detail.";
 
  public static String RxJava_Map = "What is the difference between Map(), flatMap(), concatMap() and switchMap()in Rx Java?";
 
@@ -95,12 +95,11 @@ public class QuestionsList {
 
  public static String IntentFlags = "What are the Intent Flags in Android. Explain ?";
 
- public static String Parceable ="What is the Parcelable interface in Android, and how does it differ from Serializable? Can you provide a detailed explanation of its use and the reasons for why it is preferred over Serializable in Android development?";
-
- public static String ProductFlavours = " what are the product flavors and build variants in Android . Explain in detail ?";
+ public static String Parceable = "What is Parcelable in Android and how does it differ from Serializable? Can you explain its usage and advantages in Android development?";
+ public static String ProductFlavours = "What are the product flavors and build variants in Android . Explain in detail with example ?";
  public static String LiveData = "What is the LiveData in Android? Can you explain in detail? What is the difference between the setValue() and postValue() methods?";
 
- public static String SharedPrefrences = "what are sharedPreferences in android ? Explain in detail.";
+ public static String SharedPrefrences = "What are sharedPreferences in android ? Explain in detail.";
 
  public static String Databinding  = "What is databinding in Android? Explain its uses and benefits in detail.";
 
@@ -109,6 +108,8 @@ public class QuestionsList {
  public static String Fragment_add_replace = "What is the difference between the add() and replace() methods in fragments?";
 
  public static String addBackToStack= "What is the purpose of addtoBackStack()  in fragments?";
+
+ public static String deeplinks = "what are deeplinks in android ? Explain with example ?";
 
 
 }

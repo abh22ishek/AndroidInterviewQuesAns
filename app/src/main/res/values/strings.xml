@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AndroidStudyTutorial</string>
+    <string name="app_name">Android Interview Prep</string>
     <string name="app_interview">Android Interview Questions</string>
 
     <string name="application_class">1. An Application class in Android is a base class for those who need to maintain global application state.\n
@@ -16,8 +16,11 @@
         2. It is not recommended to update the UI thread from any background thread directly. The reason for this is that updating the UI thread from a background thread can cause the UI to become unresponsive or produce a "stutter" effect, due to the fact that the background thread may be running at a different pace than the UI thread.\n\n
         - Instead, Android provides several mechanisms for updating the UI from a background thread, such as the use of Handlers, AsyncTask, and LiveData. These mechanisms allow for the background thread to communicate with the UI thread in a way that ensures smooth and responsive UI updates.</string>
 
-<string name="loopers">A Looper is a message-passing mechanism in Android that allows background threads to send messages to the UI thread. It is used to handle and process messages and runnables that are posted to a threads message queue.
-    This allows background threads to communicate with the UI thread and update the user interface as needed. An example of where a Looper is used is in the creation of a Handler, which allows for the scheduling of code to be run on a specific thread, often the UI thread. A Looper is typically used in conjunction with a Handler to allow for communication between different threads in an Android application.</string>
+<string name="loopers">A Looper is a message-passing mechanism in Android that allows background threads to send messages to the UI thread.\n
+    It is used to handle and process messages and runnables that are posted to a threads message queue.\n\n
+    This allows background threads to communicate with the UI thread and update the user interface as needed.
+    \nAn example of where a Looper is used is in the creation of a Handler, which allows for the scheduling of code to be run on a specific thread, often the UI thread.
+    \n\n  A Looper is typically used in conjunction with a Handler to allow for communication between different threads in an Android application.</string>
 
 
 </resources>

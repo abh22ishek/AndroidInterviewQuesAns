@@ -9,6 +9,9 @@
             <enum name="avantgarde" value="4" />
             <enum name="avangami" value="5" />
             <enum name="arial" value="6"/>
+            <enum name="opensansbold" value="7"/>
+            <enum name="opensansregular" value="8"/>
+
         </attr>
 
 

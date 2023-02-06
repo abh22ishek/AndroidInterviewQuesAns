@@ -11,9 +11,19 @@
         android:id="@+id/topLinear"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:gravity="center_vertical|end"
         android:background="@color/bar_layout"
         android:orientation="horizontal">
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu"
+            android:scaleType="fitXY"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/menu"
+            >
+        </ImageView>
     </LinearLayout>
 
     <FrameLayout
@@ -32,6 +42,7 @@
         android:id="@+id/bottomLinear"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:visibility="gone"
         android:layout_alignParentBottom="true"
         android:background="@color/bar_layout"
         android:orientation="horizontal">

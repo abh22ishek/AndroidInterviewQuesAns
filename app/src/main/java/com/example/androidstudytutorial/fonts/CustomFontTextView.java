@@ -21,8 +21,10 @@ public class CustomFontTextView extends androidx.appcompat.widget.AppCompatTextV
     private final static int CENTRALSANS_LIGHT = 2;
     private final static int CENTRALSANS_BOOK = 3;
 
-    private final static int AVANT_GARDE=4;
-    private final static int AVANT_GAMI=5;
+    private final static int AVANT_GARDE = 4;
+    private final static int AVANT_GAMI = 5;
+    private final static int OPENSANS_BOLD = 6;
+    private final static int OPENSANS_REGULAR = 7;
 
 
     String TYPEFACE_CENTRALSANS_XBOLD = "fonts/CentraleSans-XBold.otf";
@@ -30,6 +32,8 @@ public class CustomFontTextView extends androidx.appcompat.widget.AppCompatTextV
     String TYPEFACE_CENTRALSANS_BOOK = "fonts/CentraleSans-Book.otf";
     String TYPEFACE_AVANT_GARDE="fonts/ufonts.com_avantgarde.ttf";
     String TYPEFACE_AVANT_GAMI= "fonts/avangami.ttf";
+    String TYPEFACE_OPEN_SANS_BOLD = "fonts/OpenSans-Bold.ttf";
+    String TYPEFACE_OPEN_SANS_REGULAR = "fonts/OpenSans-Regular.ttf";
 
     String TAG=CustomFontTextView.class.getSimpleName();
 
@@ -84,6 +88,19 @@ public class CustomFontTextView extends androidx.appcompat.widget.AppCompatTextV
                 Typeface avangami = FontTYpeFace.getTypeFace(TYPEFACE_AVANT_GAMI, context);
                 setTypeface(avangami);
                 break;
+
+            case OPENSANS_BOLD:
+                Typeface bold = FontTYpeFace.getTypeFace(TYPEFACE_OPEN_SANS_BOLD, context);
+                setTypeface(bold);
+                break;
+
+
+            case OPENSANS_REGULAR:
+                Typeface reg = FontTYpeFace.getTypeFace(TYPEFACE_OPEN_SANS_REGULAR, context);
+                setTypeface(reg);
+                break;
+
+
 
         }
 

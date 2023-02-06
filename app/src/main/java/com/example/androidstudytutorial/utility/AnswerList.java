@@ -56,16 +56,46 @@ public class AnswerList {
 
 
     public static String fragments = "In Android, a Fragment represents a portion of the user interface and its associated logic. It is similar to an Activity, but it represents a part of the UI, whereas an Activity represents an entire screen. Fragments are used to create flexible and reusable UI elements that can be combined to create a" +
-            " complete user interface.\n"
+            " complete user interface.\n\n"
+
             +"Fragments have their own lifecycle, and can be added, removed, or replaced in the UI using a FragmentManager. They can also retain their state when the device is rotated " +
-            "or the app is paused.\n"
-            +" Fragments can communicate with the Activity that contains them in a few ways:"+"\n"+
+            "or the app is paused.\n\n"
+            +" Fragments can communicate with the Activity that contains them in a few ways:"+"\n\n"+
             "1. Using the getActivity() method: A Fragment can call getActivity() to get a reference to the Activity that" +
-            " contains it. The Activity can then be used to access its resources or perform other actions.\n"+
+            " contains it. The Activity can then be used to access its resources or perform other actions.\n\n"+
             "2. Using Interfaces: A Fragment can define an interface, and the Activity can implement it. The Fragment can then call the methods in the interface to communicate with the Activity."
-            +"\n"+
+            +"\n\n"+
             "3. Using ViewModel: With the introduction of Android Architecture Components, a Fragment can use a " +
             "ViewModel to hold and manage its data. The ViewModel is shared between the Fragment and the Activity, so any changes made to the ViewModel are automatically reflected in both.\n";
+
+
+    public static String fragmentsLifecycle = "The lifecycle of a fragment in Android consists of several methods that are called at different points in the life of the fragment. \n" +
+            "\n" +
+            "These methods are:\n" +
+            "\n" +
+            "onAttach(): Called when the fragment is attached to an activity. This is a good place to initialize dependencies, such as the context of the activity.\n" +
+            "\t\t\t\n" +
+            "onCreate(): Called when the fragment is created. This is a good place to initialize variables and perform other setup tasks.\n" +
+            "\n" +
+            "onCreateView(): Called to inflate the fragment's user interface.This is where you create and return the view hierarchy that will be displayed in the fragment.\n" +
+            "\t\t\t\t\n" +
+            "onActivityCreated(): Called when the activity's onCreate() method has completed. This is a good place to perform any additional setup tasks that depend on the activity's state.\n" +
+            "\t\t\t\n" +
+            "onStart(): Called when the fragment becomes visible to the user. This is a good place to start animations or bind data to the user interface.\n" +
+            "\t\t\t\n" +
+            "onResume(): Called when the fragment becomes the active fragment in the activity. This is the best place to register listeners or bind to other components in the activity\n" +
+            "\t\t\n" +
+            "onPause(): Called when the fragment is no longer the active fragment in the activity.This is a good place to unregister listeners or perform other cleanup tasks.\n" +
+            "\n" +
+            "onPause(): Called when the fragment is no longer the active fragment in the activity. This is a good place to unregister listeners or perform other cleanup taks.\n" +
+            "\t\t\n" +
+            "onStop(): Called when the fragment becomes invisible to the user.This is a good place to stop animations or unbind data from the user interface.\n" +
+            "\t\t\n" +
+            "onDestroyView(): Called when the view hierarchy associated with the fragment is being destroyed.This is a good place to release resources associated with the view hierarchy, such as bitmaps or animations.\n" +
+            "\t\t\t\n" +
+            "onDestroy(): Called when fragment completely removed \n" +
+            "\t\t\n" +
+            "\t\t";
 
     public static String screen_sizes ="Density-independent pixels (dp or dip): Density-independent pixels are used to specify layout dimensions and font sizes. They are based on the physical density of the screen, and are designed to be the same size on all screens. For example, a button that is 40dp wide will be 40 pixels wide on a low-density screen and 80 pixels wide on a high-density screen.\n" +
             "\n" +

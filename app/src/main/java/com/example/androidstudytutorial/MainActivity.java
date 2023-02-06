@@ -1,12 +1,17 @@
 package com.example.androidstudytutorial;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.util.Log;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentActivity;
@@ -14,6 +19,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.androidstudytutorial.dialog.MyBottomSheetDialogFragment;
 import com.example.androidstudytutorial.listners.CallFragment;
 import com.example.androidstudytutorial.main.DisplayFragment;
 import com.example.androidstudytutorial.main.MainFragment;
@@ -28,7 +34,8 @@ import java.util.List;
 public class MainActivity extends FragmentActivity implements CallFragment {
 
     private final String TAG = MainActivity.class.getSimpleName();
-    private RecyclerView recyclerView;
+    private ImageView mMenu;
+
 
 
     @Override
@@ -40,8 +47,14 @@ public class MainActivity extends FragmentActivity implements CallFragment {
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
         window.setStatusBarColor(getResources().getColor(R.color.status_color));
 
-
-
+        mMenu = findViewById(R.id.menu);
+        mMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showCustomSheetDialog();
+               // alertDialogBox();
+            }
+        });
         SharedPrefUtility.writePreferencesQuestions(getApplicationContext());
         SharedPrefUtility.writePreferencesAnswers(getApplicationContext());
 
@@ -54,7 +67,7 @@ public class MainActivity extends FragmentActivity implements CallFragment {
 
 
     @Override
-    public void showFragment(String key , String value) {
+    public void showFragment(List<Descx> descxList,int pos , String key , String value) {
         // Add the fragment to the activity, pushing this transaction
         // on to the back stack.
         DisplayFragment displayFragment =new DisplayFragment();
@@ -62,6 +75,11 @@ public class MainActivity extends FragmentActivity implements CallFragment {
         Bundle bundle =new Bundle();
         bundle.putString("QUESTIONS",key);
         bundle.putString("ANSWERS",value);
+        bundle.putInt("INDEX",pos);
+
+        if(descxList != null)
+             bundle.putParcelableArrayList("custom_list", (ArrayList<? extends Parcelable>) descxList);
+
         displayFragment.setArguments(bundle);
         fragmentManager.beginTransaction().replace(R.id.mainLayout, displayFragment,DisplayFragment.class.getSimpleName()).
                 addToBackStack(null).
@@ -93,5 +111,15 @@ public class MainActivity extends FragmentActivity implements CallFragment {
         }
 
     }
+
+
+
+    private void showCustomSheetDialog()
+    {
+        MyBottomSheetDialogFragment myBottomSheetDialogFragment = new MyBottomSheetDialogFragment();
+        myBottomSheetDialogFragment.show(getSupportFragmentManager(),"MyBottomSheetDialogFragment");
+
+    }
+
 
 }

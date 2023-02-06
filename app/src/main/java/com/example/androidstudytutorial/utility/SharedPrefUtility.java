@@ -84,7 +84,7 @@ public class SharedPrefUtility {
         questionList.add(sh.getString("55",""));
         questionList.add(sh.getString("56",""));
         questionList.add(sh.getString("57",""));
-
+        questionList.add(sh.getString("58",""));
 
         return questionList;
 
@@ -155,7 +155,7 @@ public class SharedPrefUtility {
         questionList.add(sh.getString("55",""));
         questionList.add(sh.getString("56",""));
         questionList.add(sh.getString("57",""));
-
+        questionList.add(sh.getString("58",""));
 
 
         return questionList;
@@ -233,7 +233,7 @@ public class SharedPrefUtility {
             myEdit.putString("55", QuestionsList.FCM);
             myEdit.putString("56", QuestionsList.Fragment_add_replace);
             myEdit.putString("57", QuestionsList.addBackToStack);
-
+            myEdit.putString("58", QuestionsList.deeplinks);
 
 
 
@@ -265,7 +265,7 @@ public class SharedPrefUtility {
             myEdit.putString("05",AnswerList.intents);
             myEdit.putString("06",AnswerList.answers_activity_cycle);
             myEdit.putString("07",AnswerList.fragments);
-            myEdit.putString("08",AnswerList.fragments);
+            myEdit.putString("08",AnswerList.fragmentsLifecycle);
 
             myEdit.putString("09",AnswerList.screen_sizes);
             myEdit.putString("10",AnswerList.handlers);
@@ -275,13 +275,13 @@ public class SharedPrefUtility {
             myEdit.putString("13",AnswerList2.Context);
 
             myEdit.putString("14",AnswerList2.Threads);
-            myEdit.putString("15",context.getResources().getString(R.string.application_class));
+            myEdit.putString("15",AnswerList2.ApplicationClass);
             myEdit.putString("16",context.getResources().getString(R.string.ui_thread));
 
             myEdit.putString("17",context.getResources().getString(R.string.loopers));
            myEdit.putString("18",AnswerList2.asynctask);
             myEdit.putString("19",AnswerList2.asynctasklimitations);
-            myEdit.putString("20",AnswerList2.work_manager);
+            myEdit.putString("20",AnswerList2.recyclerView);
 
             myEdit.putString("21", AnswerList2.ViewHolderPatterns);
             myEdit.putString("22", AnswerList2.ANR);
@@ -306,30 +306,28 @@ public class SharedPrefUtility {
            myEdit.putString("38", AnswerList3.ContentProvider);
           myEdit.putString("39", AnswerList3.ExecThread);
 
-           myEdit.putString("40", QuestionsList.RxJava);
-//            myEdit.putString("41", QuestionsList.RxJava_Map);
-//            myEdit.putString("42", QuestionsList.RxJava_Observable);
-//            myEdit.putString("43", QuestionsList.DependencyInjection);
-//
-//            myEdit.putString("44", QuestionsList.Services);
-//            myEdit.putString("45", QuestionsList.Services_IntentService);
-//
-//            myEdit.putString("46", QuestionsList.EventBus);
-//            myEdit.putString("47", QuestionsList.NotificationListnerService);
-//            myEdit.putString("48", QuestionsList.LaunchModes);
-//            myEdit.putString("49", QuestionsList.IntentFlags);
-//            myEdit.putString("50", QuestionsList.Parceable);
-//
-//            myEdit.putString("51", QuestionsList.ProductFlavours);
-//            myEdit.putString("52", QuestionsList.LiveData);
-//            myEdit.putString("53", QuestionsList.SharedPrefrences);
-//            myEdit.putString("54", QuestionsList.Databinding);
-//            myEdit.putString("55", QuestionsList.FCM);
-//            myEdit.putString("56", QuestionsList.Fragment_add_replace);
-//            myEdit.putString("57", QuestionsList.addBackToStack);
+           myEdit.putString("40", AnswerList3.RxJava);
+           myEdit.putString("41", AnswerList3.RxJava_Diff);
+            myEdit.putString("42", AnswerList3.RxJava_Diff);
+            myEdit.putString("43", AnswerList3.DI);
 
+           myEdit.putString("44", AnswerList3.Service);
+           myEdit.putString("45", AnswerList3.ServiceIntentService);
 
+           myEdit.putString("46", AnswerList3.EventBus);
+           myEdit.putString("47", AnswerList3.NLS);
+            myEdit.putString("48", AnswerList4.LaunchModes);
+            myEdit.putString("49", AnswerList4.IntentFlags);
+           myEdit.putString("50", AnswerList4.Parceable);
 
+            myEdit.putString("51", AnswerList4.ProductFlavours);
+            myEdit.putString("52", AnswerList4.LiveData);
+            myEdit.putString("53", AnswerList4.SharedPrefs);
+            myEdit.putString("54", AnswerList4.Databinding);
+            myEdit.putString("55", AnswerList4.FCM);
+            myEdit.putString("56", AnswerList4.addReplace);
+            myEdit.putString("57", AnswerList4.addtoBackstack);
+            myEdit.putString("58", AnswerList4.deeplinks);
             myEdit.apply();
 
         }catch (Exception e)
