@@ -150,9 +150,9 @@ public class AnswerList2 {
             "Avoid using heavy computations on Main thread.";
 
 
-    public static String ViewModel = "ViewModel is a class that is part of the Android Architecture Components, which is a set of libraries provided by Google to help developers design and build robust, maintainable, and testable apps.\n" +
-            "The ViewModel class is used to store and manage UI-related data in a lifecycle-aware manner. It is designed to survive configuration changes such as screen rotations, so that data does not need to be reloaded or " + "re-requested every time the screen rotates.\n" +
-            "The main use of ViewModel is to separate data from the UI and to provide a consistent and clean way of managing data. This can help to improve the performance of your app, reduce the likelihood of bugs, and make it \n" +
+    public static String ViewModel = "ViewModel is a class that is part of the Android Architecture Components, which is a set of libraries provided by Google to help developers design and build robust, maintainable, and testable apps.\n\n" +
+            "The ViewModel class is used to store and manage UI-related data in a lifecycle-aware manner. It is designed to survive configuration changes such as screen rotations, so that data does not need to be reloaded or " + "re-requested every time the screen rotates.\n\n" +
+            "The main use of ViewModel is to separate data from the UI and to provide a consistent and clean way of managing data. This can help to improve the performance of your app, reduce the likelihood of bugs, and make it \n\n" +
             "easier to test your app.\n" +
             "\n" +
             "Benefits of using ViewModel are:\n" +
@@ -165,10 +165,10 @@ public class AnswerList2 {
             "It's important to note that ViewModel is not a replacement for the traditional Android storage mechanisms such as SharedPreferences or SQLite. It's main purpose is to store and manage UI-related data, and it's not meant to replace data storage mechanisms.\n";
 
 
-    public static String ViewModelConfig ="ViewModel retains the data even if the configuration of the mobile device changes by utilizing the Android Frameworks lifecycle-awareness. When an activity or fragment is created, it is associated with a lifecycle and a ViewModel is also created and tied to this lifecycle.\n" +
-            "When a configuration change occurs, such as a screen rotation, the system destroys the current activity or fragment and creates a new one with a new lifecycle. But the ViewModel, being tied to the previous lifecycle, is not destroyed and it retains the data. When the new activity or fragment is created, it is associated with the same ViewModel, which still holds the data.\n" +
-            "This is done through the use of the ViewModelProvider class, which creates and manages the ViewModel instances. When a new activity or fragment is created, it requests a ViewModel from the ViewModelProvider, and the provider checks if there is already a ViewModel associated with the current lifecycle. If there is, it returns the existing ViewModel, otherwise, it creates a new one.\n" +
-            "In this way, ViewModel allows the data to survive configuration changes and to remain accessible to the new activity or fragment after the change.\n" +
+    public static String ViewModelConfig ="ViewModel retains the data even if the configuration of the mobile device changes by utilizing the Android Frameworks lifecycle-awareness. When an activity or fragment is created, it is associated with a lifecycle and a ViewModel is also created and tied to this lifecycle.\n\n" +
+            "When a configuration change occurs, such as a screen rotation, the system destroys the current activity or fragment and creates a new one with a new lifecycle. But the ViewModel, being tied to the previous lifecycle, is not destroyed and it retains the data. When the new activity or fragment is created, it is associated with the same ViewModel, which still holds the data.\n\n" +
+            "This is done through the use of the ViewModelProvider class, which creates and manages the ViewModel instances. When a new activity or fragment is created, it requests a ViewModel from the ViewModelProvider, and the provider checks if there is already a ViewModel associated with the current lifecycle. If there is, it returns the existing ViewModel, otherwise, it creates a new one.\n\n" +
+            "In this way, ViewModel allows the data to survive configuration changes and to remain accessible to the new activity or fragment after the change.\n\n" +
             "Also, ViewModels are not bound to a specific activity or fragment, so the same ViewModel can be shared by multiple activities or fragments, which allows the data to persist even when the user navigates away from the current screen.\n" +
             "\n";
 

@@ -4,6 +4,8 @@ import android.content.Context;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Parcelable;
+import android.text.Html;
+import android.text.Spanned;
 import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +15,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.text.HtmlCompat;
 import androidx.fragment.app.Fragment;
 
 import com.example.androidstudytutorial.R;
@@ -33,6 +36,7 @@ public class DisplayFragment extends Fragment {
     CustomFontTextView textViewAnswers;
 
     int index =0;
+    List<Descx> descxList;
     @Override
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
@@ -61,14 +65,20 @@ public class DisplayFragment extends Fragment {
 
 
         index =  getArguments().getInt("INDEX");
-        List<Descx> descxList = getArguments().getParcelableArrayList("custom_list");
-        textViewQuestions.setText(index+1+"."+" "+ descxList.get(index).getQuestions());
-        textViewAnswers.setText(descxList.get(index).getAnswers());
+        descxList = getArguments().getParcelableArrayList("custom_list");
+        textViewQuestions.setText(new StringBuilder().append(index + 1).append(".").append(" ").append(descxList.get(index).getQuestions()).toString());
 
-
+        final String htmlString = descxList.get(index).getAnswers();
+       // textViewAnswers.setText(htmlString);
+        if (htmlString != null) {
+            final Spanned spanned = HtmlCompat.fromHtml(htmlString, HtmlCompat.FROM_HTML_MODE_LEGACY);
+            final String plainText = spanned.toString();
+            // Do something with plainText here
+            textViewAnswers.setText(htmlString);
+        }
         textViewAnswers.setMovementMethod(new ScrollingMovementMethod());
 
-        imageNext.setOnClickListener(new View.OnClickListener() {
+     /*   imageNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(index == descxList.size()-1){
@@ -94,14 +104,38 @@ public class DisplayFragment extends Fragment {
                 }
             }
         });
+*/
 
-        textViewAnswers.setOnClickListener(new View.OnClickListener() {
+
+
+        imageNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
+                if (index == descxList.size() - 1) {
+                    updateUI(0);
+                } else {
+                    updateUI(index + 1);
+                }
             }
         });
+
+        imagePrevious.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (index == 0) {
+                    updateUI(descxList.size() - 1);
+                } else {
+                    updateUI(index - 1);
+                }
+            }
+        });
+
         //
+    }
+
+    private void updateUI(int newIndex) {
+        index = newIndex;
+        textViewQuestions.setText((index + 1) + ". " + descxList.get(index).getQuestions());
+        textViewAnswers.setText(descxList.get(index).getAnswers());
     }
 }

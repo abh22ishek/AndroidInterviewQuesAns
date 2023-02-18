@@ -2,22 +2,32 @@ package com.example.androidstudytutorial.utility;
 
 public class AnswerList {
 
-    public static String answers_01 = " Android architecture contains different number of components to support any android needs. \n" + "\n" +
-            "Main components of android architecture are followings \n" + "\n" + "1-Application \n" + "\n" + "2-Application framework \n" + "\n" + "3-Android runtime \n" + "\n" + "4-plateform libraries \n" + "\n" + "5-Linux kernel ";
+    public static String answers_01 = "1. Linux kernel: This is the core of the Android operating system, providing basic services such as device drivers, memory management, and security.\n" + "\n" +
+            "2. Libraries: These are collections of pre-written code that developers can use to access system features, such as media playback, networking, and graphics.\n" + "\n" +
+            "3. Android Runtime: This component provides the platform on which Android apps run, including the Dalvik Virtual Machine, which translates the app's bytecode into machine code that the device can execute.\n" + "\n" +
+            "4. Application Framework: This layer provides developers with a set of APIs that they can use to build apps, including UI controls, activity management, and content providers.\n" + "\n" +
+            "5. System Apps: These are pre-installed apps that come with the Android operating system, such as the Phone app, Messaging app, and Settings app.\n" + "\n" +
+            "6. User Interface: This component includes the home screen, app launcher, notification shade, and other elements that users interact with to navigate and use their devices.";
 
-
-    public static String answers_02 = "Android compilation process does not work with jvm instead I woks with 2 virtual machine- \n" + "\n" + "1-DVM (Dalvik virtual machine) \n" +
-            "\n" + "2-ART (Android runtime) ";
+    public static String answers_02 = "The compilation process for Android involves multiple stages, each with its own set of tools and steps.\n" +
+            "\n" +
+            "1. Java Compilation: The Android operating system is built using the Java programming language, so the first step in the compilation process involves compiling the Java code into bytecode.This step is performed using the Java compiler (javac).\n\n" +
+            "2. Conversion to Dalvik bytecode: Dalvik is the virtual machine used by Android to run applications. The bytecode generated in step 1 is then converted to Dalvik bytecode using the dx tool.\n\n" +
+            "3. Packaging resources: Android applications typically contain multiple resources, such as images, audio files, and layout files. These resources are compiled and packaged into a single binary file called an APK (Android Package).\n\n" +
+            "4. APK Signing: In order to ensure the integrity and authenticity of the APK, it must be signed using a private key. The Android SDK includes tools to generate a private key and sign the APK.\n\n" +
+            "5. Optimization: Once the APK is signed, it can be optimized for distribution. This process involves reducing the size of the APK, removing unused code and resources, and optimizing the code for faster execution. The Android SDK includes tools such as ProGuard and the Android Asset Packaging Tool (AAPT) for this purpose.\n\n\n" +
+            "Distribution: Once the APK has been optimized, it is ready for distribution to users. This can be done through the Google Play Store, or through other distribution channels such as third-party app stores or direct download from a website.";
 
 
     public static String answers_activity_cycle = "\n" +
-            "OnCreate(): This is when the view is first created. This is normally where we create views, get data from bundles etc.\n" +
-            "OnStart(): Called when the activity is becoming visible to the user. Followed by onResume() if the activity comes to the foreground, or onStop() if it becomes hidden.\n" +
-            "OnResume(): Called when the activity will start interacting with the user. At this point your activity is at the top of the activity stack, with user input going to it.\n" +
-            "OnPause(): Called as part of the activity lifecycle when an activity is going into the background, but has not (yet) been killed.\n" +
-            "OnStop(): Called when you are no longer visible to the user.\n" +
-            "OnDestroy(): Called when the activity is finishing\n" +
-            "OnRestart(): Called after your activity has been stopped, prior to it being started again";
+            "OnCreate(): This is when the view is first created. This is normally where we create views, get data from bundles etc.\n\n" +
+            "OnStart(): Called when the activity is becoming visible to the user. Followed by onResume() if the activity comes to the foreground, or onStop() if it becomes hidden.\n\n" +
+            "OnResume(): Called when the activity will start interacting with the user. At this point your activity is at the top of the activity stack, with user input going to it.\n\n" +
+            "OnPause(): Called as part of the activity lifecycle when an activity is going into the background, but has not (yet) been killed.\n\n" +
+            "OnStop(): Called when you are no longer visible to the user.\n\n" +
+            "OnDestroy(): Called when the activity is finishing\n\n" +
+            "OnRestart(): Called after your activity has been stopped, prior to it being started again\n";
+
 
 
     public static String answers_04 = "In Android, the AndroidManifest.xml file is an essential file that provides important information about the application to the Android operating system. It is located at the root of the application project directory and contains the following information:\n" +
@@ -41,15 +51,14 @@ public class AnswerList {
 
 
     public static String intents = "In Android, an Intent is a message that is passed between components such as activities, services, and broadcast receivers. Intents allow for communication between different components of an app, " +
-            "as well as between different apps."+"\n"
+            "as well as between different apps."+"\n\n"
             +"Explicit Intents are used to launch a specific component within the same app, such as starting a new Activity or Service. The component to be launched is " +
             "specified by its class name."
             +"\n\n"
             +"Intent intent = new Intent(this, SecondActivity.class);\n" +
-            "startActivity(intent);\n"
-
+            "startActivity(intent);\n\n\n"
             + " Implicit Intents are used to launch any app that can handle the specified action or data. For example, you can use an implicit intent to open a web page in a browser, or to take a picture using the camera app. Implicit intents do not specify the component to be launched, but rather the action and " +
-            "data to be performed."+"\n"
+            "data to be performed."+"\n\n\n"
             +"Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(\"http://www.example.com\"));\n" +
             "startActivity(intent);\n"
             ;
@@ -109,14 +118,14 @@ public class AnswerList {
 
 
     public static String handlers =" Handler is a class that allows  to send and process messages and runnable objects within a background thread. Handlers are commonly used to perform time-consuming operations such as network or database operations, without blocking the main thread."
-            +"\n"+"Handlers are typically used in the following ways:"+"\n"
+            +"\n\n"+"Handlers are typically used in the following ways:"+"\n"
             +"1. To post a runnable object to be executed in the background thread: The post() method can be used to post a runnable object to the message queue of the thread associated with the handler. This allows developers to perform background tasks without blocking the main thread."
             +"\n"+"Handler handler = new Handler();\n" +
             "handler.post(new Runnable() {\n" +
             "    public void run() {\n" +
             "        // perform background task\n" +
             "    }\n" +
-            "});\n"+
+            "});\n\n"+
 
             "2. To schedule a message or runnable to be executed after a specified delay: The postDelayed() method can be used to schedule a message or runnable to be executed after a specified delay. This is useful for tasks that need to be performed after a certain amount of time has passed."+
             "\n"+"Handler handler = new Handler();\n" +
@@ -124,7 +133,7 @@ public class AnswerList {
             "    public void run() {\n" +
             "        // perform task after delay\n" +
             "    }\n" +
-            "}, 1000); // delay in milliseconds\n"
+            "}, 1000); // delay in milliseconds\n\n"
             +"3. To send messages between threads: The sendMessage() and handleMessage() " +
             "methods can be used to send and process messages between threads. " +
             "This allows developers to communicate between different threads, or to schedule" +
@@ -138,6 +147,6 @@ public class AnswerList {
             "// send message from another thread\n" +
             "Message message = new Message();\n" +
             "message.what = 1;\n" +
-            "handler.sendMessage(message);\n"
+            "handler.sendMessage(message);\n\n"
             +"4. To stop executing code: The removeCallbacks() method";
 }

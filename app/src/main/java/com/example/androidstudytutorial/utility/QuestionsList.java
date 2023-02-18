@@ -3,7 +3,7 @@ package com.example.androidstudytutorial.utility;
 public class QuestionsList {
 
     public static String QUESTION_01="Describe the Android Architecture . Please Explain ?";
-    public static String QUESTION_02="Can you describe the Android Compilation Process ?";
+    public static String QUESTION_02="Describe the Android Compilation Process ?";
    //
     public static String QUESTION_03="What is an Activity.what are the types of activities and its uses ?";
     public static String QUESTION_04="What is an android manifest.xml file . what are its uses ?";

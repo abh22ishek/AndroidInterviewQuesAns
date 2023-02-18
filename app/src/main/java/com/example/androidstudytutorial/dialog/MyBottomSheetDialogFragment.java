@@ -47,12 +47,17 @@ public class MyBottomSheetDialogFragment extends BottomSheetDialogFragment {
     private List<CustomListModel> getData() {
         // create and return your data list here
         customListModelList = new ArrayList<>();
-        for(int i=0;i<3;i++){
+
+        int[] images = {R.drawable.share, R.drawable.rate, R.drawable.more};
+        String[] texts = {getString(R.string.share), getString(R.string.rate), getString(R.string.more)};
+
+        for (int i = 0; i < images.length; i++) {
             CustomListModel c = new CustomListModel();
-            c.setImage(R.drawable.menu_open);
-            c.setText("Menu");
+            c.setImage(images[i]);
+            c.setText(texts[i]);
             customListModelList.add(c);
         }
+
         return customListModelList;
     }
 

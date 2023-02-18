@@ -10,8 +10,9 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:scaleType="fitXY"
-        android:src="@mipmap/logo"
-        android:textSize="20sp"/>
+        android:padding="5dp"
+        android:layout_marginStart="15dp"
+        />
 
     <TextView
         android:id="@+id/text_view"
