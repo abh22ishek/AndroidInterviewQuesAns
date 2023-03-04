@@ -5,10 +5,12 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
@@ -112,6 +114,30 @@ public class MainActivity extends FragmentActivity implements CallFragment {
 
     }
 
+
+    private void showDialog(Context context, String headerText, String messageText) {
+        AlertDialog dialog;
+
+        View dialogView = LayoutInflater.from(context).inflate(R.layout.dialog_layout, null);
+        TextView dialogHeader = dialogView.findViewById(R.id.dialog_header);
+        dialogHeader.setText(headerText);
+
+        TextView dialogMessage = dialogView.findViewById(R.id.dialog_message);
+        dialogMessage.setText(messageText);
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        builder.setView(dialogView)
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // handle the "OK" button click
+                        dialog.cancel();
+                    }
+                });
+
+        dialog = builder.create();
+        dialog.show();
+    }
 
 
     private void showCustomSheetDialog()

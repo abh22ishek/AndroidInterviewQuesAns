@@ -1,6 +1,7 @@
 package com.example.androidstudytutorial.dialog;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
 import android.view.LayoutInflater;
@@ -9,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.androidstudytutorial.BuildConfig;
@@ -42,6 +44,8 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
                 shareApp(v.getContext());
             }else if(holder.textView.getText().toString().equalsIgnoreCase(v.getContext().getString(R.string.rate))){
                 rateUs(v.getContext());
+            }else if(holder.textView.getText().toString().equalsIgnoreCase(v.getContext().getString(R.string.about_us))){
+                showDialog(v.getContext(),v.getContext().getString(R.string.about_us),v.getContext().getString(R.string.about_us_description));
             }else{
 
             }
@@ -91,5 +95,31 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.ViewHolder
 
 
     }
+
+    private void showDialog(Context context, String headerText, String messageText) {
+        AlertDialog dialog;
+
+        View dialogView = LayoutInflater.from(context).inflate(R.layout.dialog_layout, null);
+
+        TextView dialogHeader = dialogView.findViewById(R.id.dialog_header);
+        dialogHeader.setText(headerText);
+
+        TextView dialogMessage = dialogView.findViewById(R.id.dialog_message);
+        dialogMessage.setText(messageText);
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+        builder.setView(dialogView)
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // handle the "OK" button click
+                        dialog.cancel();
+                    }
+                });
+
+        dialog = builder.create();
+        dialog.show();
+    }
+
 }
 

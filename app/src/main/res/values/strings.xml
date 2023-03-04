@@ -24,6 +24,9 @@
     <string name="share">Share</string>
     <string name="rate">Rate Us</string>
     <string name="more">More Apps</string>
-
+    <string name="about_us">About Us</string>
+    <string name="about_us_description">If you find this app useful, Please rate us and share to your friends . \n
+        Please feel free to reach us at in case of any bugs and any inputs \n\n Developer name : CaptainShelby Studios \n\n
+        Developer emailId : abhh22ishek.raj@gmail.com</string>
 
 </resources>
