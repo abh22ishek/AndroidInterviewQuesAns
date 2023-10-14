@@ -112,4 +112,9 @@ public class QuestionsList {
  public static String deeplinks = "what are deeplinks in android ? Explain with example ?";
 
 
+ public static String setValue_post_Value = "What is the difference between setValue() and postValue() in Android MVVM?";
+
+
+
+
 }
